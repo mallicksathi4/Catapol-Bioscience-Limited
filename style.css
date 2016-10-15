@@ -1,0 +1,211 @@
+/*------------Global Styles--------------*/
+
+body {
+    font-family: sans-serif;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    background-color: azure;
+    position: relative;
+}
+body h1 {
+    color: chocolate;
+    font-size: 2.2em;
+}
+
+/*-------------Sliding Image (top)----------*/
+
+#hero {
+    height: 300px;
+}
+
+#hero div{
+    position: absolute;
+    z-index: 0;
+}
+
+#hero div.previous {
+    z-index: 1;
+}
+
+#hero div.current {
+    z-index: 2;
+}
+
+/*--------------Navigation---------------------*/
+
+nav {
+    
+    color: aliceblue;
+    padding: 50px auto;
+    height: 40px;   
+    padding-top: 20px;
+    background-color: #A3ECBB;
+    margin-bottom: 40px;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 90px;
+}
+
+nav> ul >li {
+    float: left; 
+    align-content: center;
+    padding-right: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover { color: red; }
+
+/*---------------Main content----------------*/
+
+#mainContent {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#mainContent p {
+    font-style: italic;
+    font-size: 1.2em; 
+}
+
+/*--------------Sliding Image (Bottom)---------*/
+
+#slider {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 4000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 600px;
+    height: 400px;
+}
+
+/*--------------Featured Products-----------*/
+
+/*I want a background under the featured product. If I hover over the products, they should be interactive and should navigate me to the product page. */
+
+#backgroundProduct {
+    background-image: url(imagePhotoShop/background3.jpg);
+}
+
+.frontProducts {
+    margin-left: 100px;
+    float: left;
+    padding-right: 100px;
+    
+}
+.test {
+   /* content: ''; display: block; clear: both; */
+    padding-bottom: 400px;
+}
+
+/*--------------Rotating News--------------*/
+
+#rotatingNews {
+    text-align: center;
+    padding-bottom: 50px;
+    width: 600px;
+    display: block;
+    align-content: center;
+    padding-left: 100px;
+}
+
+#rotatingNews h2 {
+    background-color: cornsilk;
+    padding: 25px; 
+}
+
+#rotatingNews p {
+    background-color: cornsilk;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#rotatingNews p a {
+    text-decoration: none;
+}
+/*--------------footer--------------------*/
+footer {
+    height: 150px; 
+    padding-top: 80px;
+    text-align: center;
+}
+
+footer::before {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.footerContact a {
+    text-decoration: none;
+   
+}
+
+/*---------------Team.html styling-----------*/
+
+#teamPeople1::after {
+    content: "Suman Banik";
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#teamPeople2::after {
+    content: "Sonaton Kumar Ghosh";
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
+#teamPeople4::after {
+    content: "Sathi Mallick, PhD ";
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-bottom: 80px;
+}
+
+#asideFloat p {
+    display: block;
+    width: 600px;
+}
+
+#asideFloat h3 {
+    padding-top: 50px;
+}
+.teamPeople {
+    float: right;
+    padding-right: 100px;
+}
+
+/*----------------Product page styling-------------*/
+
+/* product description will be left of product image */
+
+
